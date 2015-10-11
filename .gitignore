@@ -1,0 +1,21 @@
+# Created by https://www.gitignore.io/api/a,haskell
+
+#!! ERROR: a is undefined. Use list command to see defined gitignore types !!#
+
+### Haskell ###
+dist
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+.stack-work/
