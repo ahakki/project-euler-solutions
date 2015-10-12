@@ -14,7 +14,7 @@ toNum = unDigits 10
 
 --Calculates the sum of a numbers Digits
 sumOfDigits :: Integral a => a -> a
-sumOfDigits n = sum $ digitsRev 10 n 
+sumOfDigits n = sum $ digitsRev 10 n
 
 --Reverses a numbers digits (eg. 123 -> 321)
 reverseNum :: Integral n => n -> n
