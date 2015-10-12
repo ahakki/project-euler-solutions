@@ -10,4 +10,3 @@ import qualified    ProjectEuler.Problem491 as P491
 main :: IO ()
 main = putStrLn "hello there" >>
        printResult P491.result
-    

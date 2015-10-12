@@ -1,4 +1,4 @@
-module ProjectEuler.Problem491 where
+module ProjectEuler.Problem491 (result) where
 
 import Ahakki.Numis
 import Data.List
