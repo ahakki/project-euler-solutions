@@ -1,4 +1,3 @@
-
 --Project Euler
 
 import              Data.Maybe
