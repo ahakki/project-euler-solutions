@@ -13,7 +13,7 @@ main =  putStrLn "hello there" >>
         putStrLn (replicate 80 '+') >>
         putStrLn "this is the not quite ultimate Porject Euler Solver" >>
         putStrLn "which problem do you want so solve? we currently offer 1, 31, 204, 357 and 491 with no guaratees of success" >>
-        getLine >>= \input ->
+        readLn >>= \input ->
         let problemNum = input
         in
         putStr "returned result: " >>
@@ -22,11 +22,10 @@ main =  putStrLn "hello there" >>
         getLine >>
         putStrLn "bye"
 
-
 peResult x
-    |x == "1"    = Just (show P001.result) ::Maybe String
-    |x == "31"   = Just (show P031.result) ::Maybe String
-    |x == "204"  = Just (show P204.result) ::Maybe String
-    |x == "357"  = Just (show P357.result) ::Maybe String
-    |x == "491"  = Just (show P491.result) ::Maybe String
+    |x == 1    = Just (show P001.result) ::Maybe String
+    |x == 31   = Just (show P031.result) ::Maybe String
+    |x == 204  = Just (show P204.result) ::Maybe String
+    |x == 357  = Just (show P357.result) ::Maybe String
+    |x == 491  = Just (show P491.result) ::Maybe String
     |otherwise   = Nothing
