@@ -1,6 +1,7 @@
 --Project Euler
 
 import              Data.Maybe
+import              Ahakki.Resis
 
 
 --import all the PE solutions
@@ -18,16 +19,15 @@ main =  putStrLn "hello there" >>
         getLine >>= \input ->
         let problemNum = input
         in
-        putStr "returned result: " >>
-        putStrLn ( fromMaybe "there was an error with your input" (peResult problemNum) ) >>
+        putStrLn (fromJust (peResult problemNum)) >>
         putStrLn "press enter to leave" >>
         getLine >>
         putStrLn "bye"
 
 peResult x
-    |x == "1"    = Just (show P001.result) ::Maybe String
-    |x == "31"   = Just (show P031.result) ::Maybe String
-    |x == "204"  = Just (show P204.result) ::Maybe String
-    |x == "357"  = Just (show P357.result) ::Maybe String
-    |x == "491"  = Just (show P491.result) ::Maybe String
+    |x == "1"    = Just (show P001.result)
+    -- |x == "31"   = Just (show P031.result) ::Maybe String
+    -- |x == "204"  = Just (show P204.result) ::Maybe String
+    -- |x == "357"  = Just (show P357.result) ::Maybe String
+    -- |x == "491"  = Just (show P491.result) ::Maybe String
     |otherwise   = Nothing
