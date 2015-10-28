@@ -1,11 +1,12 @@
 module ProjectEuler.Problem491 (result) where
 
 import Ahakki.Numis
+import Ahakki.Resis
 import Data.List
 
 
-result:: Int
-result = length divisibleBy11
+result:: PEResult
+result = PEResult 491 $ fromIntegral $ length divisibleBy11
 
 range:: [Integer]
 range = primesUpTo 100

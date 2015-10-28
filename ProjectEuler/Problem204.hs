@@ -1,9 +1,9 @@
 module ProjectEuler.Problem204 (result) where
 
 import Data.Numbers.Primes
+import Ahakki.Resis
 
-result :: Int
-result = length(filter (==True) $ map (isHamming 5) [1..1000000000] )
+result = PEResult 204 $ fromIntegral $ length(filter (==True) $ map (isHamming 5) [1..1000000000] )
 
 smallPrimes:: [Integer]
 smallPrimes = take 25 primes

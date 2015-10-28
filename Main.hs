@@ -25,7 +25,7 @@ main =  putStrLn "hello there" >>
 peResult x
     |x == "1"    = Just P001.result
     |x == "31"   = Just P031.result
-    -- |x == "204"  = Just (show P204.result) ::Maybe String
-    -- |x == "357"  = Just (show P357.result) ::Maybe String
-    -- |x == "491"  = Just (show P491.result) ::Maybe String
+    |x == "204"  = Just P204.result
+    |x == "357"  = Just P357.result
+    |x == "491"  = Just P491.result
     |otherwise   = Nothing

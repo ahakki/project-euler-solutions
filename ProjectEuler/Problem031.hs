@@ -10,8 +10,7 @@ data Coin = Coin {  value     :: Integer
                  ,  contents  :: [Coin]}
 
 instance Show Coin where
-  show (Coin v c) = unwords [show v, "pence, can be made of:", show (fmap value c)]
-
+  show (Coin v c) = show v
 
 p1    = Coin 1    []
 p2    = Coin 2    [p1, p1]
