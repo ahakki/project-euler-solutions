@@ -2,8 +2,8 @@ module ProjectEuler.Problem001 where
 
 import            Ahakki.Resis
 
-result :: PEResult Integer
-result = PEResult {peProblemNum = 1, peProblemAnswer = calc}
+result :: PEResult
+result = PEResult 1 calc
 
 calc = sum listOfDivs
     where
