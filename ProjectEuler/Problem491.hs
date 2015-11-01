@@ -6,15 +6,15 @@ import Data.List
 
 
 result:: PEResult
-result = PEResult 491 $ fromIntegral $ length divisibleBy11
+result = PEResult 491 (toInteger (length calc))
+
+calc = concatMap divisibleBy11  $ concat (permutations (pandigitalDigs ++ pandigitalDigs))
+permutes = permutations (pandigitalDigs ++ pandigitalDigs)
 
 range:: [Integer]
 range = primesUpTo 100
 
-pandigitalNums:: [Integer]
-pandigitalNums = map toNum pandigitalDigs
-    where
-        pandigitalDigs = permutations $ [0..9] ++ [0..9]
+pandigitalDigs :: [[Integer]]
+pandigitalDigs = permutations  [0..9]
 
-divisibleBy11::      [Integer]
-divisibleBy11 = filter (\x -> mod x 11 == 0) pandigitalNums
+divisibleBy11 = filter (\x -> mod x 11 == 0)

@@ -17,15 +17,15 @@ main =  putStrLn "hello there" >>
         getLine >>= \input ->
         let problemNum = input
         in
-        print (fromJust $ peResult problemNum)  >>
+        print (peResult problemNum) >>
         putStrLn "press enter to leave" >>
         getLine >>
         putStrLn "bye"
 
 peResult x
-    |x == "1"    = Just P001.result
-    |x == "31"   = Just P031.result
-    |x == "204"  = Just P204.result
-    |x == "357"  = Just P357.result
-    |x == "491"  = Just P491.result
-    |otherwise   = Nothing
+    |x == "1"    = P001.result
+    |x == "31"   = P031.result
+    |x == "204"  = P204.result
+    |x == "357"  = P357.result
+    |x == "491"  = P491.result
+    |otherwise   = NotComplete
