@@ -1,4 +1,4 @@
-module Ahakki.Numis where
+module ProjectEuler.Helper.Numis where
 
 import Data.Digits
 import Data.Numbers.Primes
@@ -20,6 +20,12 @@ sumOfDigits n = sum $ digitsRev 10 n
 reverseNum :: Integral n => n -> n
 reverseNum n =  toNum (reverse $ toDigits n)
 
---Gives you a list of prime numbers up to an upper boundary
+-- Sieve of Eratosthene
 primesUpTo :: Integral a => a -> [a]
-primesUpTo x = filter isPrime [1..x]
+primesUpTo l =
+    sieve' [2..l] []
+  where
+      sieve' (p:ns) ps =
+          sieve' (filter (\x -> rem x p /= 0) ns) (p : ps)
+      sieve' [] ps =
+          reverse ps

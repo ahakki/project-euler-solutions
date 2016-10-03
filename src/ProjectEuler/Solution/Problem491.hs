@@ -1,7 +1,7 @@
-module ProjectEuler.Problem491 (result) where
+module ProjectEuler.Solution.Problem491 (result) where
 
-import Ahakki.Numis
-import Ahakki.Resis
+import ProjectEuler.Helper.Numis
+import ProjectEuler.Result
 import Data.List
 
 

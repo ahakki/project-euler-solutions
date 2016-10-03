@@ -1,6 +1,6 @@
-module ProjectEuler.Problem031 (result) where
+module ProjectEuler.Solution.Problem031 (result) where
 
-import Ahakki.Resis
+import ProjectEuler.Result
 
 result:: PEResult
 result = NotComplete
@@ -25,5 +25,5 @@ p200  = Coin 200  [p100, p100]
 contents2 c = concatMap contents $ contents c
 contents3 c = concatMap contents $ contents2 c
 
-contentizator (Coin v []) = show v
-contentizator (Coin v c) =  show v ++ " --> " ++ concatMap contentizatortackc
+-- contentizator (Coin v []) = show v
+-- contentizator (Coin v c) =  show v ++ " --> " ++ concatMap contentizator
