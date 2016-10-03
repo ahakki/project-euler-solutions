@@ -1,5 +1,4 @@
 # Project Euler Solver
-#### An incomplete non-working Project
+#### An incomplete Project
 
-Hello People, this doesn't work.
-It is a useless attempt
+I started solving some Project Euler Problems. I might add some more once I get around to it.
