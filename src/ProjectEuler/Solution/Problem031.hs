@@ -2,7 +2,7 @@ module ProjectEuler.Solution.Problem031 (result) where
 
 import ProjectEuler.Result
 
-result:: PEResult
+result :: PEResult
 result = NotComplete
 
 

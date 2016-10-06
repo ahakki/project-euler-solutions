@@ -6,8 +6,8 @@ import Data.List
 
 data PEResult
     = PEResult
-        { peProblemNum     :: Integer
-        , peProblemAnswer  :: Integer}
+        { problemNum     :: Integer
+        , problemAnswer  :: Integer}
     | NotComplete
     deriving (Show, Eq)
 
